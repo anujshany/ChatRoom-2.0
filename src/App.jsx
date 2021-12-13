@@ -16,7 +16,7 @@ const App = () => {
       userSecret={localStorage.getItem('password')}
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
     />
-    // vid to  be continued at 51:14
+    
   );
 };
 

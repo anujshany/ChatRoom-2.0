@@ -6,6 +6,7 @@ const LoginForm = () =>{
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -23,8 +24,8 @@ const LoginForm = () =>{
             
         } catch (error) {
             //error --> try with different credentials 
-            setError('Oops, incorrect credentials ')
-        }
+            setError('Oops, incorrect credentials....')
+        } 
     }
 
     return(
@@ -41,10 +42,14 @@ const LoginForm = () =>{
                     </div>
                     <h2 className="error" align="center">
                         {error}
+                        <p>If you are a new user login using this and request the admin for a account 
+                        <p>UserName: abc
+                        Password: abc</p>
+                        </p>
                     </h2>
                 </form>
             </div>
-        </div>
+        </div>   
     )
 }
 
